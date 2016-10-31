@@ -20,10 +20,10 @@ class PropertySearch implements LatitudeLongitudeValidator
     {
 
         //edge case check
-      if(!$this->isValidLatitude($latitudeFrom)||!$this->isValidLongitude($longitudeFrom)||!$this->isValidLatitude($latitudeTo)||!$this->isValidLongitude($longitudeTo)){
+        if (!$this->isValidLatitude($latitudeFrom) || !$this->isValidLongitude($longitudeFrom) || !$this->isValidLatitude($latitudeTo) || !$this->isValidLongitude($longitudeTo)) {
 
-          return -1;
-      }
+            return -1;
+        }
         // convert from degrees to radians
         $latFrom = deg2rad($latitudeFrom);
         $lonFrom = deg2rad($longitudeFrom);
@@ -96,13 +96,13 @@ class PropertySearch implements LatitudeLongitudeValidator
     function isValidLatitude($latitude)
     {
 
-        return (boolean) preg_match('/^[-]?(([0-8]?[0-9])\.(\d+))|(90(\.0+)?)$/', $latitude);
+        return (boolean)preg_match('/^[-]?(([0-8]?[0-9])\.(\d+))|(90(\.0+)?)$/', $latitude);
     }
 
     function isValidLongitude($longitude)
     {
 
-        return (boolean) preg_match('/^[-]?((((1[0-7][0-9])|([0-9]?[0-9]))\.(\d+))|180(\.0+)?)$/', $longitude);
+        return (boolean)preg_match('/^[-]?((((1[0-7][0-9])|([0-9]?[0-9]))\.(\d+))|180(\.0+)?)$/', $longitude);
     }
 
 

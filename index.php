@@ -1,8 +1,3 @@
-<?php
-
-
-?>
-
 <html lang="en">
 
 
@@ -22,36 +17,42 @@
 
 <div class="container">
 
-    <div class="jumbotron"><h3>Search Properties below by using either the latitude/longitude text field or address field</h3></div>
+    <div class="jumbotron"><h3>Search Properties below by using either the latitude/longitude text field or address
+            field</h3></div>
     <div class="bs-docs-section">
 
-    <div class="bs-example">
-<form id="form1" data-toggle="validator" role="form" action="PropertySearch.php" method="post">
-    <div class="form-group">
-        <label for="coordinates" class="control-label"> Search by Coordinates(Latitude/Longitude)</label>
-        <input type="text" name="coordinates" class="form-control" id="coordinates" placeholder="Format:Latitude,Longitude" required >
-    </div>
+        <div class="bs-example">
+            <form id="form1" data-toggle="validator" role="form" action="PropertySearch.php" method="post">
+                <div class="form-group">
+                    <label for="coordinates" class="control-label"> Search by Coordinates(Latitude/Longitude)</label>
+                    <input type="text" name="coordinates" class="form-control" id="coordinates"
+                           placeholder="Format:Latitude,Longitude" required>
+                </div>
 
-    <div class="form-group">
-        <button type="submit" name="submitcoordinates" id="submitcoordinates" class="btn btn-primary">Submit</button>
-    </div>
+                <div class="form-group">
+                    <button type="submit" name="submitcoordinates" id="submitcoordinates" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
 
-    </form>
+            </form>
 
-        <form id="form2" data-toggle="validator" role="form" action="PropertySearch.php" method="post">
-    <div class="form-group">
-        <label for="inputAddress" class="control-label">Search by Address</label>
-        <input type="text" name="inputAddress" class="form-control" id="inputAddress" placeholder=" Format: XYZ street Tempe AZ 85282" required>
-    </div>
+            <form id="form2" data-toggle="validator" role="form" action="PropertySearch.php" method="post">
+                <div class="form-group">
+                    <label for="inputAddress" class="control-label">Search by Address</label>
+                    <input type="text" name="inputAddress" class="form-control" id="inputAddress"
+                           placeholder=" Format: XYZ street Tempe AZ 85282" required>
+                </div>
 
-    <div class="form-group">
-        <button type="submit" name="submitaddress" id="submitaddress" class="btn btn-primary">Submit</button>
-    </div>
+                <div class="form-group">
+                    <button type="submit" name="submitaddress" id="submitaddress" class="btn btn-primary">Submit
+                    </button>
+                </div>
 
 
-</form>
+            </form>
         </div>
-        </div>
+    </div>
 
 </div>
 
@@ -62,8 +63,6 @@
 <script src="http://platform.twitter.com/widgets.js"></script>
 
 </body>
-
-
 
 
 </html>
